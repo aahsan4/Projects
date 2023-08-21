@@ -1,0 +1,161 @@
+<html lang="en">
+  <!-- copy-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALENDAR</title>
+    <link rel="stylesheet" href="css/createmeeting.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- Responsive-->
+    <script src="js/createmeeting.js" defer></script>
+  </head>
+
+  <body>
+    <div class="contianer">
+      <div class="calendar">
+        <h class="meeting-title"> Schedule Meeting</h><br /><br />
+        <h class="selection-heading"> Select a meeting date: </h>
+        <div class="calendar-header">
+          <span class="month-picker" id="month-picker"> May </span>
+          <div class="year-picker" id="year-picker">
+            <span class="year-change" id="pre-year">
+              <pre><</pre>
+            </span>
+            <span id="year">2022 </span>
+            <span class="year-change" id="next-year">
+              <pre>></pre>
+            </span>
+          </div>
+        </div>
+        <div class="calendar-body">
+          <div class="calendar-week-days">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="calendar-days"></div>
+        </div>
+        <div class="calendar-footer"></div>
+        <!---      <div class="date-time-formate">
+         <div class="day-text-formate">TODAY</div> 
+          <div class="date-time-value">
+            <div class="time-formate">02:51:20</div>
+            <div class="date-formate">23 - july - 2022</div>
+          </div>
+        </div> -->
+        <div class="month-list"></div>
+        <hr class="solid" />
+        <div class="time">
+          <h class="selection-heading"> Choose a time: </h>
+          <form action="" method="post">
+            <button type="button" class="btn btn-default time" formaction="#">
+              10:30 AM
+            </button>
+            <button type="button" class="btn btn-default time" formaction="#">
+              12:00 PM
+            </button>
+            <button type="button" class="btn btn-default time" formaction="#">
+              1:10 PM
+            </button>
+            <button type="button" class="btn btn-default time" formaction="#">
+              1:45 PM
+            </button>
+            <button type="button" class="btn btn-default time" formaction="#">
+              2:00 PM
+            </button>
+            <br />
+            <button type="button" class="btn btn-default time" formaction="#">
+              3:15 PM
+            </button>
+            <button type="button" class="btn btn-default time" formaction="#">
+              4:30 PM
+            </button>
+          </form>
+        </div>
+        <hr class="solid" />
+        <div class="attendees">
+          <h class="selection-heading">
+            Select the attendees you want to invite to the meeting:
+          </h>
+          <div class="container" id="attendees">
+            <button
+              type="button"
+              class="btn btn-default attendee"
+              formaction="#"
+            >
+              <img src="images/bearpfp.png" alt="bear" width="50" />
+              <h class="attendee-info">
+                <strong>Beary Well</strong> email: imbearywell@gmail.com</h
+              >
+            </button>
+            <button
+              type="button"
+              class="btn btn-default attendee"
+              formaction="#"
+            >
+              <img src="images/bluemanpfp.png" alt="man" width="50" />
+              <h class="attendee-info">
+                <strong>Java Chip</strong> email: javac101@yahoo.com</h
+              >
+            </button>
+            <button
+              type="button"
+              class="btn btn-default attendee"
+              formaction="#"
+            >
+              <img src="images/sweaterwomanpfp.png" alt="man" width="50" />
+              <h class="attendee-info">
+                <strong>Bee Ware</strong> email: zzzb_w123@gmail.com</h
+              >
+            </button>
+          </div>
+        </div>
+        <hr class="solid" />
+
+        <div class="viruses">
+          <h class="selection-heading">
+            Select the viruses you wish the attendees to be tested on.
+          </h>
+          <br />
+          <button type="button" class="btn btn-default virus" formaction="#">
+            Flu (Influenza)
+          </button>
+          <button type="button" class="btn btn-default virus" formaction="#">
+            Coronavirus (COVID-19)
+          </button>
+          <button type="button" class="btn btn-default virus" formaction="#">
+            Chickenpox (Varicella)
+          </button>
+          <br />
+          <button type="button" class="btn btn-default virus" formaction="#">
+            Tuberculosis
+          </button>
+          <button type="button" class="btn btn-default virus" formaction="#">
+            Monkeypox (Mpox)
+          </button>
+        </div>
+        <br /><br />
+        <div class="submit-assess">
+          <a href="confirmation.html">
+            <button
+              type="button"
+              class="btn btn-default btn-lg submit"
+              formaction="#"
+            >
+              Submit
+            </button></a
+          >
+        </div>
+
+        <!---   <div class="month-list"></div> -->
+      </div>
+    </div>
+    <div class="footer_section layout_padding"></div>
+  </body>
+</html>

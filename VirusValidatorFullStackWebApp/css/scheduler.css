@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c6addf;
+}
+
+.welcome {
+    font-size: 75px;
+    text-align: center;
+    color: #9796f0;
+    padding-top: 9%;
+}
+
+.middle {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+
+.view-meeting,
+.create-meeting {
+    width: 500px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .15);
+    border-radius: 10px;
+}
+
+.description {
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    /* text-align: center; */
+}
+
+.create-meeting button {
+    width: 200px;
+    height: 80px;
+    border: none;
+    font-family: poppins;
+    margin-top: 25px;
+    margin-left: 115px;
+    background-color: #9796f0;
+    border-radius: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+}
+
+.view-meeting button {
+    width: 200px;
+    height: 80px;
+    border: none;
+    font-family: poppins;
+    margin-top: 45px;
+    margin-left: 115px;
+    background-color: #9796f0;
+    border-radius: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+}
+
+.vv {
+    cursor: pointer;
+}
+
+.logo {
+    cursor: pointer;
+    z-index: 1;
+}
