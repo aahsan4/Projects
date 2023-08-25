@@ -273,53 +273,10 @@ public class ConnectFour extends JFrame {
     private void resetB() {
         for (int row = 0; row < ROWS; row++) {
             for (int col = 0; col < COLS; col++) {
-                //buttons[row][col].setBackground(BASELINE_COLOR);
-                //buttons[row][col].setText(" ");
                 if (!buttons[row][col].getText().equals("Reset")) {
                     buttons[row][col].setEnabled(false);
                 }
             }
         }
     }
-
-
-
-
-
-
-
-    /***
-    private boolean checkVer(int col, int ro, JButton[][] buttons) {
-       if (ro <= 2) {
-           if (buttons[ro][col].getText().equals(buttons[ro + 1][col].getText()) && buttons[ro][col].getText().equals(buttons[ro + 2][col].getText()) && buttons[ro][col].getText().equals(buttons[ro + 3][col].getText())) {
-               buttons[ro][col].setBackground(Color.red);
-               buttons[ro + 1][col].setBackground(Color.red);
-               buttons[ro + 2][col].setBackground(Color.red);
-               buttons[ro + 3][col].setBackground(Color.red);
-               return true;
-           }
-       }
-       return false;
-    }
-    private boolean checkDia(int col, int ro, JButton[][] buttons) {
-        if (ro <= 2 && col >= 3) {
-            if (buttons[ro][col].getText().equals(buttons[ro + 1][col - 1].getText()) && buttons[ro][col].getText().equals(buttons[ro + 2][col - 2].getText()) && buttons[ro][col].getText().equals(buttons[ro + 3][col - 3].getText())) {
-                buttons[ro][col].setBackground(Color.red);
-                buttons[ro + 1][col - 1].setBackground(Color.red);
-                buttons[ro + 2][col - 2].setBackground(Color.red);
-                buttons[ro + 3][col - 3].setBackground(Color.red);
-                return true;
-            }
-        } else if (ro <= 2 && col <= 3){
-            if (buttons[ro][col].getText().equals(buttons[ro+1][col+1].getText()) && buttons[ro][col].getText().equals(buttons[ro+2][col+2].getText()) && buttons[ro][col].getText().equals(buttons[ro+3][col+3].getText())) {
-                buttons[ro][col].setBackground(Color.red);
-                buttons[ro+1][col+1].setBackground(Color.red);
-                buttons[ro+2][col+2].setBackground(Color.red);
-                buttons[ro+3][col+3].setBackground(Color.red);
-                return true;
-            }
-        }
-        return false;
-    }
- ***/
 }
